@@ -1,0 +1,1341 @@
+# -----------------------------------
+# Details before we start
+# ----------------------------------
+
+# VINAI - Rise Up (feat. Vamero) 
+# Map:
+# Playthrough:
+
+# Mapped by:
+
+# NoFailNoGame: https://www.youtube.com/channel/UC7tn8GJwDq83AQsAjh7CB4w
+# https://bsaber.com/members/nofailnogame/
+# -----------------------------------
+# Faded99: https://www.youtube.com/channel/UCMVhCFgHP-KgFBZK2aDPzsA
+# https://bsaber.com/members/faded99/
+# -----------------------------------
+# Z-ANESaber: https://www.youtube.com/channel/UCPjIt_8Y__QFHB-CVHjrfrw
+# https://bsaber.com/members/z-anesaber/
+# -----------------------------------
+
+# -----------------------------------
+# Structure
+# ----------------------------------
+
+# Beat 4 - 35 
+# Intro
+# ----------------------------------
+# Beat 36 - 63.5
+# Intro 2
+# ----------------------------------
+# Beat 64.5 - 67
+# Pre-Drop 1
+# ----------------------------------
+# Beat 68 - 131
+# Drop 1
+# ----------------------------------
+# Beat 132 - 179
+# Da-de-da-de-dam (still drop 1)
+# ----------------------------------
+# Beat 180 - 211
+# 2nd Verse
+# ----------------------------------
+# Beat 212 - 240
+# Intro 2
+# ----------------------------------
+# Beat 240.5 - 243
+# Pre-Drop 2
+# ----------------------------------
+# Beat 244 - 307
+# Drop 2
+# ----------------------------------
+# Beat 308 - 336.1
+# Da-de-da-de-dam (still drop 2)
+# ----------------------------------
+
+# -----------------------------------
+# Song Infos
+# ----------------------------------
+modtype: NE
+Characteristic: Standard
+Difficulty: Expert
+halfJumpDuration: 1.0
+
+# -----------------------------------
+# INTRO
+# ----------------------------------
+
+# Floor
+Line:
+    beat: 4
+    p0: 0,0,
+    p1: 0,0,
+    duration: 60
+    rotationY: random(-10,10) * (1-p)
+    changeX: random(-0.2,0.2)* (1.5-p)
+    changeWidth: random(0.5,2)* (1.2-p)
+    color: gradient(cyan,pink)
+
+# Lines -------------------------------
+Line:
+    beat: 4
+    p0: 5,1.5,0
+    p1: 5,1.5,0
+    mirror: 2
+    color: gradient(pink,white)
+    duration: 32
+
+Line:
+    beat: 8
+    p0: 4.5,2,0
+    p1: 4.5,2,0
+    mirror: 2
+    color: gradient(pink,white)
+    duration: 28
+
+Line:
+    beat: 12
+    p0: 3,1,0
+    p1: 3,1,0
+    mirror: 2
+    color: gradient(pink,white)
+    duration: 24
+
+Line:
+    beat: 16
+    p0: 2,0.5,0
+    p1: 2,0.5,0
+    mirror: 2
+    color: gradient(pink,white)
+    duration: 20
+
+Line:
+    beat: 20
+    p0: 1,3.5,0
+    p1: 1,3.5,0
+    mirror: 2
+    color: gradient(pink,white)
+    duration: 16
+
+Line:
+    beat: 24
+    p0: 0.5,0.2,0
+    p1: 8.5,2.2,0
+    mirror: 2
+    color: gradient(pink,white)
+    duration: 12
+
+Line:
+    beat: 28
+    p0: 3,1.75,0
+    p1: 3,1.75,0
+    mirror: 2
+    color: gradient(pink,white)
+    duration: 8
+
+Line: 
+    beat: 32
+    p0: 2,2,0
+    p1: 2,2,0
+    mirror: 2
+    color: gradient(pink,white)
+    duration: 4
+
+# -----------------------------------
+# INTRO 2
+# ----------------------------------
+helix
+	beat: 36
+    p0: 0,0,0
+	amount: 100
+    changeWidth: 1
+    changeDuration: 0.3
+	radius: 5
+	duration: 1
+	localrotationoffset: 90
+	rotationamount: 180
+    color: rainbow
+
+# Particles ----------------------------
+RandomNoise:
+    beat: 36
+    amount: 420
+    p0: 8,0,0
+    p1: 8,0, 28
+    changeDuration: random(0.05,0.1)
+    changeX: random(3.8,8.3)
+    changeY: random(-0.4,1.2)
+    changeWidth: random(0.2,0.3)
+    changeHeight: random(0.1,0.2)
+    color: white
+
+RandomNoise:
+    beat: 36
+    amount: 420
+    p0: -8,0,0
+    p1: -8,0, 28
+    changeDuration: random(0.05,0.1)
+    changeX: random(-3.8,-8.3)
+    changeY: random(-0.4,1.2)
+    changeWidth: random(0.2,0.3)
+    changeHeight: random(0.1,0.2)
+    color: white
+
+# -----------------------------------
+# Pre-Drop 1
+# ----------------------------------
+
+# 3 ----------------------------------
+Wall:
+    beat: 64.5
+    p0: 8,3,0
+    mirror: 2
+    localRotY: 90
+    Wallspeed: -1
+    changeduration: 0.4
+    changeHeight: 0.4
+    changeWidth: 3
+    color: white
+
+# 2 ---------------------------------
+Wall:
+    beat: 65.5
+    p0: 3,8,0
+    mirror: 2
+    Wallspeed: -1
+    localRotY: 90
+    changeduration: 0.4
+    changeHeight: 0.4
+    changeWidth: 3
+    color: cyan
+
+# 1 ----------------------------------
+Wall:
+    beat: 66.5
+    p0: 2,0.2,0
+    mirror: 2
+    localRotY: 90
+    Wallspeed: -1
+    changeduration: 0.4
+    changeHeight: 0.4
+    changeWidth: 3
+    color: red
+
+
+# ---------------------------------
+line
+	beat: 67
+	amount: 54
+	p0: 7,-2,0
+	p1: 7,4,0
+	mirror: 2
+	changeduration: 0.25
+	changewidth: 0.5
+	color: red
+
+line
+    beat: 68.6
+    duration: 0.5
+    changeHeight: 0.2
+    amount: 64
+    p0: 7,4,0
+    p1: 2.5,0
+    wallspeed: -1
+    color: gradient(red,white)
+    mirror: 2
+
+# -----------------------------------
+# Drop 1 (so glad I can loop this shit)
+# ----------------------------------
+
+helix
+	beat: 68
+    p0: 0,0,0
+	amount: 100
+    changeWidth: 1
+    changeDuration: 0.3
+	radius: 5
+	duration: 1
+	localrotationoffset: -90
+	rotationamount: -180
+    color: rainbow
+
+# Floor -------------------------------------
+Grid:
+    beat: 68.25
+    changeDuration: 0.5
+    color: rainbow
+
+Grid:
+    beat: 76.25
+    changeDuration: 0.5
+    color: rainbow
+
+Grid:
+    beat: 84.25
+    changeDuration: 0.5
+    color: gradient(pink,white)
+
+Grid:
+    beat: 92.25
+    changeDuration: 0.5
+    color: gradient(pink,white)
+
+Grid:
+    beat: 100.25
+    changeDuration: 0.5
+    color: gradient(pink,white)
+
+Grid:
+    beat: 108.25
+    changeDuration: 0.5
+    color: gradient(pink,white)
+
+Grid:
+    beat: 116.25
+    changeDuration: 0.5
+    color: gradient(pink,white)
+
+Grid:
+    beat: 124.25
+    changeDuration: 0.5
+    color: gradient(pink,white)
+
+# Kicks -------------------------------
+line
+    beat: 69
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: magenta
+    mirror: 2
+
+line
+    beat: 70
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: magenta
+    mirror: 2
+
+line
+    beat: 71
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: magenta
+    mirror: 2
+
+line
+    beat: 72
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: magenta
+    mirror: 2
+
+line
+    beat: 73
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: magenta
+    mirror: 2
+
+line:
+	beat: 73
+	amount: 32
+	duration: 1
+	p0: 4,0,0
+	p1: 0,0,1
+	changewidth: 0.5
+	wallspeed: -1
+	mirror: 2
+    color: white
+
+line
+    beat: 74
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: magenta
+    mirror: 2
+
+line
+    beat: 75
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: magenta
+    mirror: 2
+
+# helix ----------------------------------
+helix
+	beat: 76
+    p0: 0,0,0
+	amount: 100
+    changeWidth: 1
+    changeHeight: 0.5
+    changeDuration: 0.3
+	radius: 5
+	duration: 1
+	localrotationoffset: -90
+	rotationamount: -180
+    color: white
+
+line
+    beat: 76
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: magenta
+    mirror: 2
+
+line
+    beat: 77
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: magenta
+    mirror: 2
+
+line
+    beat: 78
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: magenta
+    mirror: 2
+
+line
+    beat: 79
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: magenta
+    mirror: 2
+
+line
+    beat: 80
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: magenta
+    mirror: 2
+
+helix
+	beat: 80
+    p0: 0,0,0
+	amount: 100
+    changeWidth: 1
+    changeHeight: 0.5
+    changeDuration: 0.3
+	radius: 5
+	duration: 1
+	localrotationoffset: 90
+	rotationamount: 180
+    color: white
+
+line
+    beat: 81
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: magenta
+    mirror: 2
+
+line
+    beat: 82
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: magenta
+    mirror: 2
+
+line
+    beat: 83
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: magenta
+    mirror: 2
+
+line
+    beat: 84
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: magenta
+    mirror: 2
+
+line:
+	beat: 85
+	amount: 32
+	duration: 1
+	p0: 4,0,0
+	p1: 0,0,1
+	changewidth: 0.5
+	wallspeed: -1
+	mirror: 2
+    color: white
+
+line:
+	beat: 86
+	amount: 32
+	duration: 1
+	p0: 0,0,0
+	p1: 6,0,1
+	changewidth: 0.5
+	wallspeed: -1
+	mirror: 2
+    color: white
+
+line
+    beat: 88
+    amount: 85
+    p0: 1,-3,0
+    p1: 8,6,0.5
+    changeHeight: 1.5
+    changeWidth: 0.4
+    changeDuration: 0.2
+    color: red
+    mirror: 2
+
+line
+    beat: 92
+    amount: 85
+    p0: 7,0,0
+    p1: -7,0,0
+    changeHeight: 0.2
+    changeWidth: 0.4
+    changeDuration: 0.75
+    color: red
+
+helix
+	beat: 96.1
+    p0: 0,0,0
+	amount: 100
+    changeWidth: 1
+    changeHeight: 0.5
+    changeDuration: 0.75
+	radius: 8
+	duration: 2
+	localrotationoffset: 90
+	rotationamount: 360
+    color: gradient(red,green)
+
+line
+    beat: 100
+    amount: 85
+    p0: 7,5,0
+    p1: -7,5,0
+    changeHeight: 0.2
+    changeWidth: 0.4
+    changeDuration: 0.75
+    color: rainbow
+
+line
+    beat: 100.1
+    amount: 85
+    p0: 7,0,0
+    p1: -7,0,0
+    changeHeight: 0.2
+    changeWidth: 0.4
+    changeDuration: 0.75
+    color: rainbow
+
+line
+    beat: 104.1
+    amount: 85
+    p0: 7,-1,0
+    p1: 7,7,0
+    changeHeight: 0.2
+    changeWidth: 0.4
+    changeDuration: 0.75
+    color: rainbow
+    mirror: 2
+
+helix
+	beat: 108.1
+    p0: 0,0,0
+	amount: 100
+    changeWidth: 1
+    changeHeight: 0.5
+    changeDuration: 0.75
+	radius: 5
+	duration: 2
+	localrotationoffset: 90
+	rotationamount: 180
+    color: gradient(red,green)
+
+helix
+	beat: 112.1
+    p0: 0,0,0
+	amount: 100
+    changeWidth: 1
+    changeHeight: 0.5
+    changeDuration: 0.75
+	radius: 5
+	duration: 2
+	rotationamount: -180
+    color: gradient(red,green)
+
+line:
+	beat: 116
+	amount: 24
+	duration: 2
+	p0: -3,0,0
+	p1: -9,1.5,3
+	addWidth: 5
+	changewidth: -2
+	color: rainbow(2,0.5)
+	mirror: 2
+
+line
+    beat: 120
+    amount: 85
+    p0: -7,0,0
+    p1: 7,0,0
+    changeHeight: 0.2
+    changeWidth: 0.4
+    changeDuration: 0.75
+    color: cyan
+
+line
+    beat: 124
+    amount: 85
+    p0: -7,10,0
+    p1: -7,0,0
+    changeHeight: 0.2
+    changeWidth: 0.4
+    changeDuration: 0.75
+    color: gradient(cyan,white)
+    mirror: 2
+
+helix
+	beat: 128.1
+    p0: 0,0,0
+	amount: 188
+    changeWidth: 1
+    changeHeight: 0.5
+    changeDuration: 0.75
+	radius: 5
+	duration: 4
+	rotationamount: 720
+    color: rainbow
+
+# -----------------------------------
+# Da-de-da-de-dam (still drop 1)
+# ----------------------------------
+
+# Rainbow Floor ----------------------
+line:
+	beat: 132 + r*d
+	amount: 32
+	duration: 4
+	p0: 0,0,0
+	p1: -2.5,0,2
+	p2: 0,0,2
+	addWidth: 0.5
+	changewidth: 0.5
+	color: rainbow(2,0.5)
+	mirror: 2
+	repeat: 7.75
+
+# Particles -------------------------
+RandomNoise:
+    beat: 132
+    amount: 420
+    p0: 8,0,0
+    p1: 8,0, 28
+    changeDuration: random(0.05,0.1)
+    changeX: random(3.8,8.3)
+    changeY: random(-0.4,1.2)
+    changeWidth: random(0.2,0.3)
+    changeHeight: random(0.1,0.2)
+    color: random(red,cyan,white,pink,magenta)
+
+RandomNoise:
+    beat: 132
+    amount: 420
+    p0: -8,0,0
+    p1: -8,0, 28
+    changeDuration: random(0.05,0.1)
+    changeX: random(-3.8,-8.3)
+    changeY: random(0.4,1.2)
+    changeWidth: random(0.2,0.3)
+    changeHeight: random(0.1,0.2)
+    color: random(red,cyan,white,pink,magenta)
+
+# End of drop ------------------------
+helix
+	beat: 160.1
+    p0: 0,0,0
+	amount: 100
+    changeWidth: 1
+    changeHeight: 0.5
+    changeDuration: 0.75
+	radius: 8
+	duration: 2
+	rotationamount: -360
+    color: gradient(red,green)
+
+# -----------------------------------
+# 2nd Verse
+# ----------------------------------
+
+# Lines ----------------------------
+Line:
+    beat: 180
+    p0: 5,1.5,0
+    p1: 5,1.5,0
+    mirror: 2
+    color: cyan
+    duration: 32
+
+Line:
+    beat: 184
+    p0: 4.5,2,0
+    p1: 4.5,2,0
+    mirror: 2
+    color: cyan
+    duration: 28
+
+Line:
+    beat: 188
+    p0: 3,1,0
+    p1: 3,1,0
+    mirror: 2
+    color: cyan
+    duration: 24
+
+Line:
+    beat: 192
+    p0: 2,0.5,0
+    p1: 2,0.5,0
+    mirror: 2
+    color: cyan
+    duration: 20
+
+Line:
+    beat: 196
+    p0: 1,3.5,0
+    p1: 1,3.5,0
+    mirror: 2
+    color: cyan
+    duration: 16
+
+Line:
+    beat: 200
+    p0: 0.5,0.2,0
+    p1: 8.5,2.2,0
+    mirror: 2
+    color: cyan
+    duration: 12
+
+Line:
+    beat: 204
+    p0: 3,1.75,0
+    p1: 3,1.75,0
+    mirror: 2
+    color: cyan
+    duration: 8
+
+Line:
+    beat: 208
+    p0: 2,2,0
+    p1: 2,2,0
+    mirror: 2
+    color: cyan
+    duration: 4
+
+# -----------------------------------
+# INTRO 2
+# ----------------------------------
+
+helix
+	beat: 212
+    p0: 0,0,0
+	amount: 100
+    changeWidth: 1
+    changeDuration: 0.3
+	radius: 5
+	duration: 1
+	localrotationoffset: 90
+	rotationamount: 180
+    color: rainbow
+
+# Particles -------------------------
+RandomNoise:
+    beat: 212
+    amount: 420
+    p0: 8,0,0
+    p1: 8,0, 28
+    changeDuration: random(0.05,0.1)
+    changeX: random(3.8,8.3)
+    changeY: random(-0.4,1.2)
+    changeWidth: random(0.2,0.3)
+    changeHeight: random(0.1,0.2)
+    color: white
+
+RandomNoise:
+    beat: 212
+    amount: 420
+    p0: -8,0,0
+    p1: -8,0, 28
+    changeDuration: random(0.05,0.1)
+    changeX: random(-3.8,-8.3)
+    changeY: random(-0.4,1.2)
+    changeWidth: random(0.2,0.3)
+    changeHeight: random(0.1,0.2)
+    color: white
+
+# -----------------------------------
+# Pre-Drop 2
+# ----------------------------------
+
+Wall:
+    beat: 240.5
+    p0: 8,3,0
+    mirror: 2
+    localRotY: 90
+    Wallspeed: -1
+    changeduration: 0.4
+    changeHeight: 0.4
+    changeWidth: 3
+    color: white
+
+Wall:
+    beat: 241.5
+    p0: 3,8,0
+    mirror: 2
+    Wallspeed: -1
+    localRotY: 90
+    changeduration: 0.4
+    changeHeight: 0.4
+    changeWidth: 3
+    color: cyan
+
+Wall:
+    beat: 242.5
+    p0: 2,0.2,0
+    mirror: 2
+    localRotY: 90
+    Wallspeed: -1
+    changeduration: 0.4
+    changeHeight: 0.4
+    changeWidth: 3
+    color: red
+
+line
+	beat: 243
+	amount: 54
+	p0: 7,-2,0
+	p1: 7,4,0
+	mirror: 2
+	changeduration: 0.25
+	changewidth: 0.5
+	color: red
+
+line
+    beat: 244.6
+    duration: 0.5
+    changeHeight: 0.2
+    amount: 64
+    p0: 7,4,0
+    p1: 2.5,0
+    wallspeed: -1
+    color: gradient(red,white)
+    mirror: 2
+
+# -----------------------------------
+# Drop 2 (Yes i actually looped that shit)
+# ----------------------------------
+
+helix
+	beat: 244
+    p0: 0,0,0
+	amount: 100
+    changeWidth: 1
+    changeDuration: 0.3
+	radius: 5
+	duration: 1
+	localrotationoffset: -90
+	rotationamount: -180
+    color: rainbow
+
+# Floor -----------------------------
+Grid:
+    beat: 244.25
+    changeDuration: 0.5
+    color: rainbow
+
+Grid:
+    beat: 252.25
+    changeDuration: 0.5
+    color: rainbow
+
+Grid:
+    beat: 260.25
+    changeDuration: 0.5
+    color: gradient(pink,white)
+
+Grid:
+    beat: 268.25
+    changeDuration: 0.5
+    color: gradient(pink,white)
+
+Grid:
+    beat: 276.25
+    changeDuration: 0.5
+    color: gradient(pink,white)
+
+Grid:
+    beat: 284.25
+    changeDuration: 0.5
+    color: gradient(pink,white)
+
+Grid:
+    beat: 292.25
+    changeDuration: 0.5
+    color: gradient(pink,white)
+
+Grid:
+    beat: 300.25
+    changeDuration: 0.5
+    color: gradient(pink,white)
+
+# Kicks ---------------------------
+line
+    beat: 245
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: white
+    mirror: 2
+
+line
+    beat: 246
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: white
+    mirror: 2
+
+line
+    beat: 247
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: white
+    mirror: 2
+
+line
+    beat: 248
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: white
+    mirror: 2
+
+line
+    beat: 249
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: white
+    mirror: 2
+
+line:
+	beat: 249
+	amount: 32
+	duration: 1
+	p0: 4,0,0
+	p1: 0,0,1
+	changewidth: 0.5
+	wallspeed: -1
+	mirror: 2
+    color: red
+
+line
+    beat: 250
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: white
+    mirror: 2
+
+line
+    beat: 251
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: white
+    mirror: 2
+
+# Helix -----------------------------
+helix
+	beat: 252
+    p0: 0,0,0
+	amount: 100
+    changeWidth: 1
+    changeHeight: 0.5
+    changeDuration: 0.3
+	radius: 5
+	duration: 1
+	localrotationoffset: -90
+	rotationamount: -180
+    color: white
+
+line
+    beat: 252
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: white
+    mirror: 2
+
+line
+    beat: 253
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: white
+    mirror: 2
+
+line
+    beat: 254
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: white
+    mirror: 2
+
+line
+    beat: 255
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: white
+    mirror: 2
+
+line
+    beat: 256
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: white
+    mirror: 2
+
+helix
+	beat: 256
+    p0: 0,0,0
+	amount: 100
+    changeWidth: 1
+    changeHeight: 0.5
+    changeDuration: 0.3
+	radius: 5
+	duration: 1
+	localrotationoffset: 90
+	rotationamount: 180
+    color: white
+
+line
+    beat: 257
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: white
+    mirror: 2
+
+line
+    beat: 258
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: white
+    mirror: 2
+
+line
+    beat: 259
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: white
+    mirror: 2
+
+line
+    beat: 260
+    amount: 85
+    p0: 5,-1,0
+    p1: 5, 6,0.5
+    changeHeight: 3
+    changeWidth: 1
+    color: white
+    mirror: 2
+
+line:
+	beat: 261
+	amount: 32
+	duration: 1
+	p0: 4,0,0
+	p1: 0,0,1
+	changewidth: 0.5
+	wallspeed: -1
+	mirror: 2
+    color: red
+
+line:
+	beat: 262
+	amount: 32
+	duration: 1
+	p0: 0,0,0
+	p1: 6,0,1
+	changewidth: 0.5
+	wallspeed: -1
+	mirror: 2
+    color: red
+
+line
+    beat: 264
+    amount: 85
+    p0: 1,-3,0
+    p1: 8,6,0.5
+    changeHeight: 1.5
+    changeWidth: 0.4
+    changeDuration: 0.2
+    color: red
+    mirror: 2
+
+line
+    beat: 268
+    amount: 85
+    p0: 7,0,0
+    p1: -7,0,0
+    changeHeight: 0.2
+    changeWidth: 0.4
+    changeDuration: 0.75
+    color: red
+
+line
+    beat: 276.1
+    amount: 85
+    p0: 7,5,0
+    p1: -7,5,0
+    changeHeight: 0.2
+    changeWidth: 0.4
+    changeDuration: 0.75
+    color: rainbow
+
+line
+    beat: 276.1
+    amount: 85
+    p0: 7,0,0
+    p1: -7,0,0
+    changeHeight: 0.2
+    changeWidth: 0.4
+    changeDuration: 0.75
+    color: rainbow
+
+line
+    beat: 280.1
+    amount: 85
+    p0: 7,-1,0
+    p1: 7,7,0
+    changeHeight: 0.2
+    changeWidth: 0.4
+    changeDuration: 0.75
+    color: rainbow
+    mirror: 2
+
+helix
+	beat: 284.1
+    p0: 0,0,0
+	amount: 100
+    changeWidth: 1
+    changeHeight: 0.5
+    changeDuration: 0.75
+	radius: 5
+	duration: 2
+	localrotationoffset: 90
+	rotationamount: 180
+    color: gradient(red,green)
+
+helix
+	beat: 288.1
+    p0: 0,0,0
+	amount: 100
+    changeWidth: 1
+    changeHeight: 0.5
+    changeDuration: 0.75
+	radius: 5
+	duration: 2
+	rotationamount: -180
+    color: gradient(red,green)
+
+line:
+	beat: 292
+	amount: 24
+	duration: 2
+	p0: -3,0,0
+	p1: -9,1.5,3
+	addWidth: 5
+	changewidth: -2
+	color: rainbow(2,0.5)
+	mirror: 2
+
+line
+    beat: 296
+    amount: 85
+    p0: -7,0,0
+    p1: 7,0,0
+    changeHeight: 0.2
+    changeWidth: 0.4
+    changeDuration: 0.75
+    color: cyan
+
+line
+    beat: 300
+    amount: 85
+    p0: -7,10,0
+    p1: -7,0,0
+    changeHeight: 0.2
+    changeWidth: 0.4
+    changeDuration: 0.75
+    color: gradient(cyan,white)
+    mirror: 2
+
+helix
+	beat: 304.1
+    p0: 0,0,0
+	amount: 188
+    changeWidth: 1
+    changeHeight: 0.5
+    changeDuration: 0.75
+	radius: 5
+	duration: 4
+	rotationamount: 720
+    color: rainbow
+
+# -----------------------------------
+# Da-de-da-de-dam (still drop 2)
+# ----------------------------------
+
+# Rainbow Floor --------------------
+line:
+	beat: 308 + r*d
+	amount: 32
+	duration: 4
+	p0: 0,0,0
+	p1: -2.5,0,2
+	p2: 0,0,2
+	addWidth: 0.5
+	changewidth: 0.5
+	color: rainbow(2,0.5)
+	mirror: 2
+	repeat: 7.75
+
+# Particles ---------------------
+RandomNoise:
+    beat: 308
+    amount: 420
+    p0: 8,0,0
+    p1: 8,0, 28
+    changeDuration: random(0.05,0.1)
+    changeX: random(3.8,8.3)
+    changeY: random(-0.4,1.2)
+    changeWidth: random(0.2,0.3)
+    changeHeight: random(0.1,0.2)
+    color: random(red,cyan,white,pink,magenta)
+
+RandomNoise:
+    beat: 308
+    amount: 420
+    p0: -8,0,0
+    p1: -8,0, 28
+    changeDuration: random(0.05,0.1)
+    changeX: random(-3.8,-8.3)
+    changeY: random(0.4,1.2)
+    changeWidth: random(0.2,0.3)
+    changeHeight: random(0.1,0.2)
+    color: random(red,cyan,white,pink,magenta)
+
+# End of drop -------------------------------
+helix
+	beat: 336.1
+    p0: 0,0,0
+	amount: 100
+    changeWidth: 1
+    changeHeight: 0.5
+    changeDuration: 0.75
+	radius: 8
+	duration: 2
+	rotationamount: -360
+    color: gradient(red,green)
+
+# ----------------------------------
+
+# If you're reading this have a nice day
+# ~ Zane
