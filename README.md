@@ -5,7 +5,7 @@
 
 # Playthrough: 
 
-Dependencies:
+# Dependencies:
 
 - BeatWalls: https://github.com/spookyGh0st/beatwalls
 - Java: https://java.com/en/download/
